@@ -1,0 +1,103 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Theme tối cố định (không đổi theo hệ thống), lấy tinh thần từ fingerprint.to -->
+    <style name="Theme.XPrinterBT" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryDark">@color/bg</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorOnPrimary">@color/accent_on</item>
+
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+
+        <item name="colorControlNormal">@color/text_secondary</item>
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="colorControlHighlight">@color/surface_alt</item>
+
+        <item name="materialButtonStyle">@style/Widget.XPrinterBT.Button.Primary</item>
+    </style>
+
+    <!-- Nút chính (CTA) - nền xanh lá accent, chữ đậm tối màu để tương phản tốt -->
+    <style name="Widget.XPrinterBT.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="android:textColor">@color/accent_on</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Nút phụ - chỉ viền, nền trong suốt -->
+    <style name="Widget.XPrinterBT.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/stroke</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="rippleColor">@color/surface_alt</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Nút dạng chữ, dùng cho hành động nguy hiểm (ngắt kết nối) -->
+    <style name="Widget.XPrinterBT.Button.Text.Danger" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/danger</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="rippleColor">@color/badge_error_bg</item>
+    </style>
+
+    <!-- Khung nhập liệu viền bo góc, nền hơi nổi so với card -->
+    <style name="Widget.XPrinterBT.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/stroke</item>
+        <item name="boxBackgroundColor">@color/surface_alt</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_muted</item>
+    </style>
+
+    <!-- Ô chọn thiết bị Bluetooth dạng dropdown (Exposed Dropdown Menu) -->
+    <style name="Widget.XPrinterBT.TextInputLayout.Dropdown" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/stroke</item>
+        <item name="boxBackgroundColor">@color/surface_alt</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_muted</item>
+    </style>
+
+    <!-- Thẻ (card) nền tối, viền mảnh thay vì đổ bóng nặng -->
+    <style name="Widget.XPrinterBT.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="strokeColor">@color/stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <!-- Tiêu đề mục trong thẻ -->
+    <style name="TextAppearance.XPrinterBT.SectionTitle">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Chữ phụ, mô tả nhỏ -->
+    <style name="TextAppearance.XPrinterBT.Caption">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+</resources>

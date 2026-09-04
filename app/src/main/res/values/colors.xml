@@ -1,0 +1,27 @@
+<resources>
+    <!-- Nền & bề mặt (dark UI, tông màu gần đen giống fingerprint.to) -->
+    <color name="bg">#171717</color>
+    <color name="surface">#1E1E1F</color>
+    <color name="surface_alt">#232324</color>
+    <color name="stroke">#2E2E30</color>
+
+    <!-- Chữ -->
+    <color name="text_primary">#F5F5F5</color>
+    <color name="text_secondary">#A0A0A3</color>
+    <color name="text_muted">#6E6E72</color>
+
+    <!-- Màu nhấn (accent) - xanh lá, gợi nhớ tag "FOUND" trên fingerprint.to -->
+    <color name="accent">#22C55E</color>
+    <color name="accent_dark">#16A34A</color>
+    <color name="accent_on">#07240F</color>
+
+    <!-- Trạng thái -->
+    <color name="danger">#F87171</color>
+    <color name="danger_dark">#DC2626</color>
+    <color name="info">#60A5FA</color>
+
+    <!-- Nền cho badge trạng thái (màu trong suốt nhẹ) -->
+    <color name="badge_success_bg">#2622C55E</color>
+    <color name="badge_error_bg">#26F87171</color>
+    <color name="badge_neutral_bg">#2660A5FA</color>
+</resources>
