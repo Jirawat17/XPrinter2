@@ -19,6 +19,8 @@ jobs:
 
       - name: Cài Gradle
         uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.4'
 
       - name: Build APK bản debug (cài thử trực tiếp)
         run: gradle assembleDebug --stacktrace
