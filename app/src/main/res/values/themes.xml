@@ -88,14 +88,14 @@
     </style>
 
     <!-- Tiêu đề mục trong thẻ -->
-    <style name="TextAppearance.XPrinterBT.SectionTitle">
+    <style name="TextAppearance.XPrinterBT.SectionTitle" parent="android:TextAppearance">
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <!-- Chữ phụ, mô tả nhỏ -->
-    <style name="TextAppearance.XPrinterBT.Caption">
+    <style name="TextAppearance.XPrinterBT.Caption" parent="android:TextAppearance">
         <item name="android:textColor">@color/text_secondary</item>
         <item name="android:textSize">13sp</item>
     </style>
